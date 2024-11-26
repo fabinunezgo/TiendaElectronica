@@ -4,14 +4,11 @@
  */
 package Modelo.Usuario;
 
-
 /**
  *
  * @author thyfa
  */
-
-
-public class Usuario {
+public class UsuarioDTO {
     private int id;
     private String nombre;
     private String username;
@@ -43,7 +40,7 @@ public class Usuario {
     }
 
  
-    public Usuario(int id, String nombre, String username, String password, String rol) {
+    public UsuarioDTO(int id, String nombre, String username, String password, String rol) {
         this.id = id;
         this.nombre = nombre;
         this.username = username;
@@ -52,6 +49,3 @@ public class Usuario {
     }
 
 }
-
-
-   

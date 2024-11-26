@@ -1,7 +1,9 @@
-package modelo;
+package Modelo.Ventas;
+
 
 import java.util.Date;
 import java.util.List;
+
 
 public class Venta {
     private int id;
