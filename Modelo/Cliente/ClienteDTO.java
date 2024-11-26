@@ -8,7 +8,7 @@ package Modelo.Cliente;
  *
  * @author thyfa
  */
-public class ModeloDTO {
+public class ClienteDTO {
     public class Cliente {
     private String cedula;
     private String nombreCompleto;
