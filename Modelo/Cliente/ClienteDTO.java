@@ -15,12 +15,46 @@ public class ClienteDTO {
     private String telefono;
     private String correo;
 
+<<<<<<< HEAD
     public ClienteDTO(String cedula, String nombreCompleto, String direccion, String telefono, String correo) {
         this.cedula = cedula;
         this.nombreCompleto = nombreCompleto;
         this.direccion = direccion;
         this.telefono = telefono;
         this.correo = correo;
+=======
+        public String getCedula() {
+            return cedula;
+        }
+
+        public String getNombreCompleto() {
+            return nombreCompleto;
+        }
+
+        public String getDireccion() {
+            return direccion;
+        }
+
+        public String getTelefono() {
+            return telefono;
+        }
+
+        public String getCorreo() {
+            return correo;
+        }
+
+    
+        public Cliente(String cedula, String nombreCompleto, String direccion, String telefono, String correo) {
+            this.cedula = cedula;
+            this.nombreCompleto = nombreCompleto;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.correo = correo;
+        }
+        
+        
+
+>>>>>>> 8c78f002758818009b01d835899eda407b7882f3
     }
 
     public String getCedula() {

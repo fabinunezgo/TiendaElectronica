@@ -8,7 +8,6 @@ package Modelo.Cliente;
  *
  * @author thyfa
  */
-public class pueba {
-    private int thy;
+public class ClienteMapper implements <Cliente,{
     
 }

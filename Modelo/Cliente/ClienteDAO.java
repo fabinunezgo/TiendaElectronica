@@ -11,6 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.sql.PreparedStatement;
 
 /**
  *
@@ -24,6 +25,7 @@ public class ClienteDAO extends Dao<ClienteDTO> {
 
     @Override
     public boolean agregar(ClienteDTO dto) throws SQLException {
+<<<<<<< HEAD
         if (dto == null) {
             return false;
         }
@@ -36,6 +38,17 @@ public class ClienteDAO extends Dao<ClienteDTO> {
             stmt.setString(5, dto.getCorreo());
             return stmt.executeUpdate() > 0;
         }
+=======
+       String sql = "INSERT INTO Cliente (cedula, nombreCompleto, direccion, telefono, correo) VALUES (?, ?, ?, ?, ?)";
+    try (PreparedStatement statement = connection.prepareStatement(sql)) {
+        statement.setString(1, Cliente());
+        statement.setString(2, dto.getNombreCompleto());
+        statement.setString(3, dto.getDireccion());
+        statement.setString(4, dto.getTelefono());
+        statement.setString(5, dto.getCorreo());
+        return statement.executeUpdate() > 0; // Devuelve true si se insertó al menos un registro
+    }
+>>>>>>> 8c78f002758818009b01d835899eda407b7882f3
     }
 
     @Override
@@ -107,4 +120,9 @@ public class ClienteDAO extends Dao<ClienteDTO> {
             return stmt.executeUpdate() > 0;
         }
     }
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> 8c78f002758818009b01d835899eda407b7882f3
 }
