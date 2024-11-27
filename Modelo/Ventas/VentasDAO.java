@@ -4,8 +4,7 @@
  */
 package Modelo.Ventas;
 
-import Modelo.Dao.Dao;
-import java.sql.Connection;
+import Modelo.Dao.VentaDAO;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -13,35 +12,34 @@ import java.util.List;
  *
  * @author thyfa
  */
-public class VentasDAO extends Dao<VentasDTO>{
-
-    public VentasDAO(Connection connection) {
-        super(connection);
-    }
+public class VentasDAO implements VentaDAO{
+   
 
     @Override
-    public boolean agregar(VentasDTO dto) throws SQLException {
+    public void insertarVenta(Venta venta) throws SQLException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public VentasDTO read(Object id) throws SQLException {
+    public Venta obtenerVentaPorId(int id) throws SQLException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public List<VentasDTO> readAll() throws SQLException {
+    public List<Venta> obtenerTodasLasVentas() throws SQLException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public boolean actualizar(VentasDTO dto) throws SQLException {
+    public void actualizarVenta(Venta venta) throws SQLException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public boolean eliminar(Object id) throws SQLException {
+    public void eliminarVenta(int id) throws SQLException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+  
     
 }

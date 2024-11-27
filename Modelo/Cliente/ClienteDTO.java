@@ -35,6 +35,7 @@ public class ClienteDTO {
         public void setDireccion(String direccion) {
             this.direccion = direccion;
         }
+        
 
         public Cliente(String cedula, String nombreCompleto, String direccion, String telefono, String correo) {
             this.cedula = cedula;
