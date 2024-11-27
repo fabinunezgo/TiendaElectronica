@@ -9,7 +9,7 @@ package Modelo.Producto;
  * @author thyfa
  */
 public class ProductoDTO {
-    public class Producto {
+
     private int codigo;
     private String nombre;
     private String categoria;
@@ -17,38 +17,62 @@ public class ProductoDTO {
     private int cantidadDisponible;
     private String proveedor;
 
-        public int getCodigo() {
-            return codigo;
-        }
+    // Constructor
+    public ProductoDTO(int codigo, String nombre, String categoria, double precio, int cantidadDisponible, String proveedor) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.precio = precio;
+        this.cantidadDisponible = cantidadDisponible;
+        this.proveedor = proveedor;
+    }
 
-        public String getNombre() {
-            return nombre;
-        }
+    // Métodos get y set
+    public int getCodigo() {
+        return codigo;
+    }
 
-        public String getCategoria() {
-            return categoria;
-        }
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
 
-        public void setPrecio(double precio) {
-            this.precio = precio;
-        }
+    public String getNombre() {
+        return nombre;
+    }
 
-        public void setCantidadDisponible(int cantidadDisponible) {
-            this.cantidadDisponible = cantidadDisponible;
-        }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-        public void setProveedor(String proveedor) {
-            this.proveedor = proveedor;
-        }
+    public String getCategoria() {
+        return categoria;
+    }
 
-        public Producto(int codigo, String nombre, String categoria, double precio, int cantidadDisponible, String proveedor) {
-            this.codigo = codigo;
-            this.nombre = nombre;
-            this.categoria = categoria;
-            this.precio = precio;
-            this.cantidadDisponible = cantidadDisponible;
-            this.proveedor = proveedor;
-        }
-  
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public int getCantidadDisponible() {
+        return cantidadDisponible;
+    }
+
+    public void setCantidadDisponible(int cantidadDisponible) {
+        this.cantidadDisponible = cantidadDisponible;
+    }
+
+    public String getProveedor() {
+        return proveedor;
+    }
+
+    public void setProveedor(String proveedor) {
+        this.proveedor = proveedor;
     }
 }
